@@ -1,0 +1,795 @@
+/*---------------------------------------- All --------------------------------------------------*/
+/*
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    color: #f7f7f7; /* 적당히 밝은 흰색 */
+    font-family: arial, 'Times New Roman', Times, serif;
+}
+
+/*---------------------------------------- navigation --------------------------------------------------*/
+#navigation {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 9999;
+    
+/*    border: 2px solid red;*/
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+/*    border: 1px dashed yellow;*/
+}
+
+nav h3 {
+    color: floralwhite;
+    float: left;
+    padding-top: 10px;
+    padding-left: 150px;
+    
+/*    border: 2px solid hotpink;*/
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    float: right;
+    
+/*    border: 2px solid hotpink;*/
+}
+
+nav ul li {
+    float: left;
+    padding-top: 12px;
+    padding-right: 150px;
+    
+/*    border: 2px solid aqua;*/
+}
+
+a {
+    color: floralwhite;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+/*---------------------------------------- header --------------------------------------------------*/
+#container-header {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#container-header-move {
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+}
+
+#head_img {
+    width: 1920px; 
+    height: 1080px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+}
+
+/*---------------------------------------- water --------------------------------------------------*/
+
+#water_img {
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+/*---------------------------------------- circle - story & shop --------------------------------------------------*/
+#container-circle {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+/*    border: 2px dashed green;*/
+}
+
+#container-circle-move {
+    width: 1091px;
+    height: 1400px;
+    margin: 0 auto;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#circle-img {
+    width: 1091px; 
+    height: 445px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 80%;
+    
+/*    border: 2px dashed blue;*/
+}
+
+/*---------------------------------------- Water Is Life --------------------------------------------------*/
+.water-is-life-img, .story-img, .shop-img {
+    position: relative;
+    background-position: center;
+    background-size: cover; /* bg이미지가 꽉 차게 나옮 */ 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /* 배경 이미지 고정 */
+    
+/*    border: 10px solid red;*/
+}
+
+.dim {
+    width: 100%; 
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 3;
+    
+/*    border: 2px solid blue;*/
+}
+
+.water-is-life-img {
+    background-image: url(./images/water_is_life_01.png);
+    width: 100%;
+    height: 1196px; 
+    z-index: -1;
+}
+
+.caption {
+    position: absolute;
+    left: 15.5%;
+    top: 40%;
+    width: 30%;
+    text-align: center;
+    z-index: 5;
+    
+/*    border: 2px solid red; */
+}
+
+.border {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    font-size: 35pt;
+    letter-spacing: 5px;
+    z-index: 5;
+}
+
+#water-text {
+    width: 405px;
+    height: 62px;
+    
+    margin: 0 auto;
+    position: absolute;
+    top: 51%;
+    left: 20%;
+    z-index: 5;
+    
+/*    border: 2px solid red;*/
+}
+
+/*---------------------------------------- 1 + 1 --------------------------------------------------*/
+#container-one {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+/*    border: 2px dashed green;*/
+}
+
+#container-one_plus_one {
+    width: 2000px;
+    /* 
+     * 이미지 컨테이너의 가로 길이를 길게 해줌으로써, 
+     * 첫번째 이미지 밑에 두번째 이미지가 오는 것이 아니라, 
+     * 첫번째 이미지 오른쪽 옆에 2번째 이미지가 올 수 있도록 했다. 
+     */
+    height: 1400px;
+    margin: 0 auto;
+    
+/*    border: 2px solid blue;*/
+}
+
+#container-one-move {
+    width: 585px;
+    height: 587px;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    
+/*    border: 2px dashed green;*/
+}
+
+#container-two-move {  
+    width: 585px;
+    height: 587px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    
+/*    border: 2px dashed green;*/
+}
+
+/*---------------------------------------- 01. STORY --------------------------------------------------*/
+.story-img {
+    background-image: url(./images/story.png);
+    height: 1158px; 
+    z-index: -1;
+}
+
+#text-story {
+    position: absolute;
+    left: 46%;
+    top: 28%;
+    z-index: 5;
+    
+/*    border: 2px solid red; */
+}
+
+/*---------------------------------------- 아이들의 두손을 자유롭게 --------------------------------------------------*/
+#black-box-bg1 {
+    width: 100%;
+    height: 344px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #000;
+        
+/*    border: 2px solid red;*/
+}
+
+#free-hand-text {
+    position: absolute;
+    margin: 0 auto;
+    width: 655px;
+    height: 54px;
+    left: 36%;
+    top: 120%;
+    
+/*    border: 2px solid red;*/
+}
+
+/*---------------------------------------- STORY work --------------------------------------------------*/
+#black-box-bg2 {
+    width: 100%;
+    min-height: 9718px; 
+    position: relative;
+    margin: 0 auto;
+    background-color: #000;
+    z-index: 1;
+        
+/*    border: 2px solid red;*/
+}
+
+#black-box-img {
+    width: 1920px; 
+    height: 9532px;
+    margin: 0 auto;
+    
+    position: absolute;
+    z-index: 7;
+}
+
+#jerrycan-img {
+    width: 224px; 
+    height: 297px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 0%;
+    left: 45%;
+    z-index: 3;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#child-img {
+    width: 272px; 
+    height: 401px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 10%;
+    left: 43.5%;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#jerrybag-img {
+    width: 467px; 
+    height: 370px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 11%;
+    left: 39%;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#hand-img {
+    width: 204px; 
+    height: 448px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 22%;
+    left: 45%;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#money-img {
+    width: 227px; 
+    height: 227px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 23%;
+    left: 45%;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#woman-img {
+    width: 292px; 
+    height: 439px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 33%;
+    left: 43%;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#sewing-machine-img {
+    width: 274px; 
+    height: 250px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 46%;
+    left: 43%;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#pinkbag-img1 {
+    width: 202px; 
+    height: 320px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 46.5%;
+    left: 40.2%;
+    z-index: 1;
+}
+
+#bluebag-img1 {
+    width: 202px; 
+    height: 320px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 46.5%;
+    left: 50.7%;
+    z-index: 1;
+}
+
+#pinkbag-img2 {
+    width: 202px; 
+    height: 320px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 46.5%;
+    left: 43.7%;
+}
+
+#bluebag-img2 {
+    width: 202px; 
+    height: 320px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 46.5%;
+    left: 43.4%;
+}
+
+#bluebag-img {
+    width: 402px; 
+    height: 319px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 68%;
+    left: 40.5%;
+    z-index: 1;
+}
+
+#jerrycan-img2 {
+    width: 254px; 
+    height: 327px;
+        
+    position: absolute;
+    margin: 0 auto;
+    top: 58%;
+    left: 44.4%;
+}
+
+
+#jerrycan-jerrybag-img {
+    width: 362px; 
+    height: 395px;
+        
+    position: absolute;
+    margin: 0 auto;
+    top: 69%;
+    left: 41.5%;
+    z-index: 5;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#child-back-img {
+    width: 272px; 
+    height: 401px;
+        
+    position: absolute;
+    margin: 0 auto;
+    top: 80%;
+    left: 44%;
+    
+/*    border: 2px dashed orange;*/
+}
+
+#water-img {
+    width: 1045px; 
+    height: 1207px;
+        
+    position: absolute;
+    margin: 0 auto;
+    top: 80%;
+    left: 24%;
+    z-index: -3;
+    
+/*    border: 2px dashed orange;*/
+}
+
+/*---------------------------------------- 02. SHOP --------------------------------------------------*/
+.shop-img {
+    background-image: url(./images/shop_01.png);
+    min-height: 1158px; 
+    z-index: -1;
+}
+
+#text-shop {
+    position: absolute;
+    left: 46%;
+    top: 28%;
+    z-index: 5;
+
+/*    border: 2px solid red; */
+}
+
+/*---------------------------------------- Desgin Type --------------------------------------------------*/
+.container-shadow img {
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+    position: relative;
+    
+/*    border: 2px dashed blue;*/
+}
+
+#design-type {
+    width: 100%;
+    height: 1000px; 
+    position: relative;
+    margin: 0 auto;
+    
+/*    border: 2px dashed green;*/
+}
+
+#design-type-text {
+    width: 218px;
+    height: 75px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 45%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#design-type-circle {
+    width: 1587px;
+    height: 445px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 60%;
+    left: 8%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#standard-canvas {
+    width: 100%;
+    height: 1200px; 
+    position: relative;
+    margin: 0 auto;
+    
+/*    border: 2px dashed green;*/
+}
+
+#standard-canvas-text {
+    width: 305px;
+    height: 76px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 42.5%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#standard-canvas-img1 {
+    width: 574px;
+    height: 426.5px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 60%;
+    left: 3%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#standard-canvas-img2 {
+    width: 574px;
+    height: 426.5px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 60%;
+    left: 35%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#standard-canvas-img3 {
+    width: 574px;
+    height: 426.5px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 60%;
+    left: 67%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#serengeti {
+    width: 100%;
+    height: 1600px; 
+    position: relative;
+    margin: 0 auto;
+    
+/*    border: 2px dashed green;*/
+}
+
+#serengeti-text {
+    width: 168px;
+    height: 75px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 25%;
+    left: 46.3%;
+}
+
+#serengeti-img1 {
+    width: 575px;
+    height: 426.5px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 17%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#serengeti-img2 {
+    width: 575px;
+    height: 426.5px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 54%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#serengeti-img3 {
+    width: 575px;
+    height: 426.5px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 75%;
+    left: 17%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#serengeti-img4 {
+    width: 575px;
+    height: 426.5px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 75%;
+    left: 54%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#art-collabo {
+    width: 100%;
+    height: 1200px; 
+    position: relative;
+    margin: 0 auto;
+    
+/*    border: 2px dashed green;*/
+}
+
+#art-collabo-text {
+    width: 203px;
+    height: 75px; 
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 30%;
+    left: 45%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#art-collabo-img1 {
+    width: 574.5px;
+    height: 426.5px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 3%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#art-collabo-img2 {
+    width: 574.5px;
+    height: 426.5px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 35%;
+    
+/*    border: 2px dashed red;*/
+}
+
+#art-collabo-img3 {
+    width: 574.5px;
+    height: 426.5px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 67%;
+    
+/*    border: 2px dashed red;*/
+}
+
+/*---------------------------------------- footer --------------------------------------------------*/
+#design-better-life {
+    width: 100%;
+    height: 1600px;
+    position: relative;
+    margin: 0 auto;
+        
+/*    border: 2px dashed red;*/
+}
+
+#design-better-life-move {
+    width: 1280px;
+    height: 854px;
+    
+    position: absolute;
+    margin: 0 auto;
+    left: 18%;
+    top: 25%;
+        
+/*    border: 2px solid red;*/
+}
+
+#design-better-life-img {
+    width: 1280px;
+    height: 854px;
+    
+    position: absolute;
+    margin: 0 auto;
+    z-index: -1;
+        
+/*    border: 2px solid hotpink;*/
+}
+
+#design-better-life-text {
+    position: absolute;
+    left: 50%;
+    top: 37%;
+
+    color: #f7f7f7;
+    font-size: 35pt;
+    letter-spacing: 1.5px;
+    text-align: center;
+    z-index: 5;
+    
+/*    border: 2px dashed red;*/
+}
+
+#footer {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+/*    border: 2px solid red;*/
+}
+
+#footer-img {
+    background-image: url(./images/footer.png);
+    width: 100%;
+    height: 672px;
+    
+    position: absolute;
+    margin: 0 auto;
+    
+    background-position: bottom;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    
+/*     border: 2px solid green; */
+}
+
+/*---------------------------------------- last --------------------------------------------------*/
+.blank {
+    height: 1000px;
+    
+/*    border: 2px solid green; */
+}
+
+
